@@ -8,6 +8,9 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
+\usepackage[backend=biber,style=science]{biblatex}
+\addbibresource{sources.bib}
+
 % Page Margins
 \usepackage[margin=2cm]{geometry}
 
@@ -16,6 +19,7 @@
 \hypersetup{
     hidelinks=true
 }
+
 
 % use stylised font for figure captions
 \usepackage{caption}
@@ -73,5 +77,8 @@
 \end{titlepage}
 
 \section{Introduction}	
-\lipsum
+\lipsum\cite{lunduke_half_2018}
+
+\printbibliography
+
 \end{document}
