@@ -1,6 +1,7 @@
 # TeX-Template
 My primary document template
 
+![screenshot1](screenshot1.png)
 
 
-![screenshot](screenshot.png)
+![screenshot2](screenshot2.png)
