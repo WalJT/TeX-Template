@@ -20,7 +20,15 @@
 
 % Create Navigation bookmarks, make contents page clickable
 \usepackage{hyperref}
-\hypersetup{hidelinks}
+% Create Navigation bookmarks, make contents page clickable, and add metadata
+\usepackage{hyperref}
+\hypersetup{
+        pdfauthor={Your Name},
+    	pdftitle={The Title},
+    	pdfsubject={The Subject},
+    	pdfkeywords={Some Keywords},
+        hidelinks
+}
 
 
 % use stylised font for figure captions
