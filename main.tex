@@ -30,7 +30,18 @@
     	pdfkeywords={Some Keywords},
         hidelinks
 }
+% Set up section heading format
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\bfseries\centering}
+{}{0.5em}{}
 
+\titleformat{\subsection}
+{\normalfont\itshape}
+{}{0.5em}{}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
 
 % use stylised font for figure captions
 \usepackage{caption}
@@ -94,8 +105,11 @@
 \newpage
 
 \pagenumbering{arabic}
-\section{Introduction}	
-\lipsum\cite{lunduke_half_2018}
+\section{Introduction}
+\lipsum[1]\cite{lunduke_half_2018}
+
+\subsection{Stuff}
+\lipsum[1]
 
 \printbibliography
 
