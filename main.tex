@@ -12,8 +12,6 @@
 \usepackage{tabularx} % better table formatting
 \usepackage[version=4]{mhchem} % chemical equations
 
-\renewcommand{\familydefault}{\sfdefault}
-
 \usepackage[
     backend=biber,
     style=ieee
@@ -35,11 +33,11 @@
 % Set up section heading format
 \usepackage{titlesec}
 \titleformat{\section}
-{\Large\bfseries\centering}
+{\sffamily\Large\bfseries\centering}
 {}{0em}{}
 
 \titleformat{\subsection}
-{\large\bfseries}
+{\sffamily\large\bfseries}
 {}{0em}{}
 
 \renewcommand{\thesection}{\arabic{section}}
