@@ -44,6 +44,7 @@
 
 \renewcommand{\thesection}{\arabic{section}}
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+% Opinion: Anything further down the hierarchy than a subsection is ridiculous.
 
 % use stylised font for figure captions
 \usepackage{caption}
@@ -101,10 +102,23 @@
 \pagenumbering{arabic}
 
 \section{Introduction}
-\lipsum[1]\cite{lunduke_half_2018}
+\lipsum[1]
+
+\section{Example Content}
+
+This section contains some examples, starting with a subsection with some content.
 
 \subsection{Stuff}
 \lipsum[1]
+
+\subsection{Tables}
+
+\subsection{Figures}
+
+\subsection{Code}
+
+\subsection{A Citation}
+Linux is really cool\cite{lunduke_half_2018}.
 
 \printbibliography
 
