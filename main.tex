@@ -57,19 +57,19 @@
 % Set-up for including source code listings
 \usepackage{listings}
 
-%New colors defined below
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-%\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+%New colours to use for source code
+\definecolor{codestring}{rgb}{0,0.6,0}
+\definecolor{codecomment}{rgb}{0.5,0.5,0.5}
+\definecolor{codekeyword}{rgb}{0,0,1}
+\definecolor{backcolour}{rgb}{0.99,0.99,0.99}
 
 %Code listing style named "mystyle"
 \lstdefinestyle{mystyle}{
 	backgroundcolor=\color{backcolour},  
-	commentstyle=\color{codegray},
-	keywordstyle=\color{magenta},
-	numberstyle=\tiny\color{codegray},
-	stringstyle=\color{codegreen},
+	commentstyle=\color{codecomment},
+	keywordstyle=\color{codekeyword},
+	numberstyle=\tiny,
+	stringstyle=\color{codestring},
 	basicstyle=\ttfamily\footnotesize,
 	breakatwhitespace=false,         
 	breaklines=true,                 
@@ -129,7 +129,7 @@ This section contains some examples, starting with a subsection with some conten
 \subsection{Figures}
 
 \subsection{Source code listings}
-
+I have included below a random script that I occasionally use to convert video files. This is read directly from a file by using the \textit{listings} package.
 \lstinputlisting[language=bash]{code/fconvert}
 
 \subsection{A citation}
