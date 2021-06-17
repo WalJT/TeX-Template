@@ -90,6 +90,21 @@
 %"mystyle" code listing set
 \lstset{style=mystyle}
 
+% "Totally sweet" separator (https://tex.stackexchange.com/questions/32711/totally-sweet-horizontal-rules-in-latex)
+\usepackage[object=vectorian]{pgfornament}
+\newcommand{\sectionline}{%
+  \noindent
+  \begin{center}
+  {\resizebox{0.5\linewidth}{1ex}
+    {{%
+    {\begin{tikzpicture}
+    \node  (C) at (0,0) {};
+    \node (D) at (14,0) {};
+    \path (C) to [ornament=89] (D);
+    \end{tikzpicture}}}}}%
+    \end{center}
+}
+
 % Title and Author info
 
 \title{Document Title\\\large{A descriptive subtitle}}
@@ -101,7 +116,7 @@
 	%%%% Title Page with document information
 \pagenumbering{roman}
 \maketitle
-\hrulefill
+\sectionline
 \tableofcontents
 \newpage
 \pagenumbering{arabic}
